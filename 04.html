@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>职位-姓名-联系方式</title>
+<meta content="text/html" charset="UTF-8">
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<style>
+#left {
+    padding: 1rem 0.8rem;
+}
+#right {
+    padding: 1.2rem 0.8rem 0 0;
+}
+.header {
+    font-weight: bold;
+}
+.content {
+    line-height: 0.6rem;
+}
+.list {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 26px;
+}
+</style>
+</head>
+<body>
+<div id="app">
+    <el-row>
+        <el-col id="left" :span="8">
+            <el-image
+            style="width: 6rem;margin-bottom: 2rem;"
+            src="./avatar.jpg"
+            fit="scale-down"></el-image>
+            <div>姓名：xxx</div>
+            <div>性别：女</div>
+            <div>年龄：24</div>
+            <div>手机：123123</div>
+            <div>微信：123123</div>
+            <div>邮箱：123123</div>
+            <div>意向：123123</div>
+        </el-col>
+        <el-col id="right" :span="16">
+            <div class="header">教育经历</div>
+            <p class="content">2016.09 - 2020.06 xxx大学 xxx专业 本科</p>
+            <div class="header">校园经历</div>
+            <p class="content">2016.09 - 2020.06 xxxx事件</p>
+            <p class="content">2016.09 - 2020.06 xxxx事件</p>
+            <p class="content">2016.09 - 2020.06 xxxx事件</p>
+            <p class="content">2016.09 - 2020.06 xxxx事件</p>
+            <div class="header">项目经历</div>
+            <p class="content">2016.09 - 2020.06 xxxx项目
+                <ul class="list">
+                    <li>S：情景（situation）</li>
+                    <li>T：任务（task）</li>
+                    <li>A：行动（action）</li>
+                    <li>R：结果（result）</li>
+                </ul>
+            </p>
+            <p class="content">2016.09 - 2020.06 xxxx项目
+                <ul class="list">
+                    <li>S：情景（situation）</li>
+                    <li>T：任务（task）</li>
+                    <li>A：行动（action）</li>
+                    <li>R：结果（result）</li>
+                </ul>
+            </p>
+            <p class="content">2016.09 - 2020.06 xxxx项目
+                <ul class="list">
+                    <li>S：情景（situation）</li>
+                    <li>T：任务（task）</li>
+                    <li>A：行动（action）</li>
+                    <li>R：结果（result）</li>
+                </ul>
+            </p>
+            <div class="header">专业技能</div>
+            <p class="content">
+                <ul class="list">
+                    <li>英语：xxxx</li>
+                    <li>比赛：xxxx</li>
+                    <li>证书：xxxx</li>
+                    <li>其他：xxxx</li>
+                </ul>
+            </p>
+        </el-col>
+    </el-row>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+new Vue({
+    el: '#app',
+})
+</script>
+</html>
